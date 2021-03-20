@@ -27,6 +27,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Education</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
                     </ul>
@@ -52,7 +53,7 @@
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-white mb-4">About</h2>
                         <p class="text-white-50">
-                            Hunter is a fourth year mechanical engineering student concentrating in mechatronics and minoring in computer science at Cal Poly, San Luis Obispo. As an Undergraduate Biomechanics Research Assistant he is developing software to capture gait using wearable sensors. Straddling the line between hardware, software, and the human experience, he aims to develop a career closing the divide between human and machine.
+                            Hunter is a fourth year mechanical engineering student concentrating in mechatronics and minoring in computer science at Cal Poly, San Luis Obispo. As an Undergraduate Biomechanics Research Assistant, he is developing software to capture gait using wearable sensors. Straddling the line between hardware, software, and the human experience, he aims to develop a career closing the divide between human and machine.
                             
                         </p>
                         <p>
@@ -94,6 +95,34 @@
                         <p class="text-black-50">
                             Systems Programing | Mechatronics | Mechanical Control Systems | Mechanical Design | Data Structures | Object Orientation Programming | Assembly | Heat Transfer | Philosophy of Design
                         </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h5 class="text-black mb-4">Study Abroad</h5>
+                        <h6 class="text-black mb-4">Hangzhou, China 2018</h6>
+                        <p class="text-black-50">
+                            I studied statistics, manufacturing, and Chinese in Hangzhou during the summer between my freshman and sophomore year.
+                        </p>
+                        <button onclick="moreStudyAbroad()" id ="btn_moreStudyAbroad">more</button>
+                        <script>
+                            function moreStudyAbroad(){
+                                var btn = document.getElementByID("btn_moreStudyAbroad");
+                                var more_studyAbroad = document.getElementByID("studyAbroad");
+                                var disp_studyAbroad = more_studyAbroad.style.display;
+
+                                if (disp_studyAbroad == 'block'){
+                                    more_studyAbroad.style.display = 'none';
+                                    btn.innerHTML = 'more';
+                                } else {
+                                    more_studyAbroad.style.display = 'block';
+                                    btn.innerHTML = 'less';
+                                }
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
