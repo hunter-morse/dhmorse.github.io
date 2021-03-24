@@ -28,6 +28,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resume">Resume</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
                     </ul>
@@ -52,16 +53,17 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-white mb-4">About</h2>
+                        <img class="img-fluid" src="assets/img/me.jpg" alt="" style="width:250px; height:auto" />
                         <p class="text-white-50">
                             Hunter is a fourth year mechanical engineering student concentrating in mechatronics and minoring in computer science at Cal Poly, San Luis Obispo. As an Undergraduate Biomechanics Research Assistant, he is developing software to capture gait using wearable sensors. Straddling the line between hardware, software, and the human experience, he aims to develop a career closing the divide between human and machine.
                             
                         </p>
                         <p>
-                            <a href=""> Resume </a>
+                            <a href="assets/pdf/HunterMorse_Resume"> Resume </a>
                         </p>
                     </div>
                 </div>
-                <img class="img-fluid" src="assets/img/tiltTable.png" alt="" />
+                
             </div>
         </section>
 
@@ -69,9 +71,11 @@
         <!-- Education -->
         <section class="projects-section bg-light" id="education">
             <div class="container">
-                <!-- Featured Project Row-->
+                <!-- Main Education-->
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-6 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" style="width:300px; height:auto" alt="" /></div>
+                    <div class="col-xl-6 col-lg-7">
+                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/calpoly/bonderson.jpg" alt="" />
+                    </div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h2>Education</h2>
@@ -106,19 +110,20 @@
                         <h6 class="text-black mb-4">Hangzhou, China 2018</h6>
                         <p class="text-black-50">
                             I studied statistics, manufacturing, and Chinese in Hangzhou during the summer between my freshman and sophomore year.
-                        </p>
+                        
                         <button class="btn_on btn_off" onclick="moreStudyAbroad()" id ="btn_moreStudyAbroad">more</button>
+                        </p>
                         <script>
                             function moreStudyAbroad(){
-                                var btn = document.getElementByID("btn_moreStudyAbroad");
-                                var more_studyAbroad = document.getElementByID("studyAbroad");
+                                var btn = document.getElementById("btn_moreStudyAbroad");
+                                var more_studyAbroad = document.getElementById("studyAbroad");
 
                                 if (more_studyAbroad.style.display == "none"){
                                     more_studyAbroad.style.display = "block";
-                                    btn.innerHTML = "more";
+                                    btn.innerHTML = "less";
                                 } else {
                                     more_studyAbroad.style.display = "none";
-                                    btn.innerHTML = 'less';
+                                    btn.innerHTML = "more"
                                 }
                             }
                         </script>
@@ -133,9 +138,9 @@
                                    -moz-user-select: none;
                                     -ms-user-select: none;
                                         user-select: none;
-                                background-color: blue;
+                                background-color: transparent;
                                 border: 1px solid transparent;
-                                padding: 0.375rem 0.75rem;
+                                padding: 0.1rem 0.25rem;
                                 font-size: 1rem;
                                 line-height: 1.5;
                                 border-radius: 0.25rem;
@@ -143,38 +148,141 @@
                             }
                             .btn_off {
                                 color: #4b91d6;
-                                background-color: white;
+                                background-color: transparent;
                             }
                             .btn_on:hover {
                                 color: #4ba3d6;
-                                background-color: white;
+                                background-color: transparent;
                             }
 
                         </style>
                     </div>
 
-                    <div id = "studyAbroad" style="display: none;">
-                        <div style="display: inline-block; text-align: center;">
-                            <p class="text-black-50">~Abroad~</p>
-                            <img src="assests/img/chinaBackpacks.jpeg" style="width:250px; height: auto;"/>
+            <div class="container" id="studyAbroad" style="display:none;">
+                    <div class="row justify-content-center no-gutters">
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="featured-text text-center text-lg-left">
+                                <p class="text-black-50 mb-0">
+                                    After classes ended I explored the greater Shanghai region, Guilin, and Shenzhen.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-5">
+                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/china/chinaBackpacks.jpeg" alt="" />
                         </div>
                     </div>
-
-                </div>
             </div>
-
-
-
-
         </section>
 
+        <!-- Resume -->
+        <section class="resume bg-light" id="resume">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Resume</h2>
+                    <p>Seeking Internship or co-op for Summer 2021</p>
+                </div>
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-xl-7 col-lg-8">
+                        <!--HMB-->
+                        <div class="resume-item">
+                            <h4>Research Assistant</h4>
+                            <h5>Jan 2020 - Present</h5>
+                            <p><em>Human Motion Biomechanics Lab, Cal Poly, San Luis Obispo, CA</em></p>
+                            <ul>
+                                <li>Developing MATLAB script with Madgwick filter to calculate knee FE, IE, and AA angles from wearable sensors </li>
+                                <li>Processed and analyzed motion data using Motion Analysis’ Cortex and OpenSim</li>
+                                <li>Co-organized and performed the lab’s first gait study on youth participants</li>
+                            </ul>
+                            <button class="btn_on btn_off" onclick="moreHMB()" id ="btn_moreHMB">more</button>
+                            <script>
+                                function moreHMB(){
+                                    var btn = document.getElementById("btn_moreHMB");
+                                    var more_studyAbroad = document.getElementById("hmbPics");
 
+                                    if (more_studyAbroad.style.display == "none"){
+                                        more_studyAbroad.style.display = "block";
+                                        btn.innerHTML = "less";
+                                    } else {
+                                        more_studyAbroad.style.display = "none";
+                                        btn.innerHTML = "more"
+                                    }
+                                }
+                            </script>
+                            <div id="hmbPics" style="display: none;">
+                                <div style="display: inline-block;text-align: center;">
+                                    <p>Lab Members</p>
+                                    <img src="assets/img/resume/hmbGroup.jpg" style="width: auto; height: 300px;"/>
+                                </div>
+                                <div style="display: inline-block;text-align: center;">
+                                    <p>Marked-up</p>
+                                    <img src="assets/img/resume/hmbMarkers.jpg" style="width: auto; height: 300px;"/>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CPF Python-->
+                        <div class="resume-item">
+                            <h4>Python Course Instructor</h4>
+                            <h5>Winter 2021</h5>
+                            <p><em>Cal Poly Fintech, San Luis Obispo, CA</em></p>
+                            <ul>
+                                <li>Volunteer course instructor for an eight-week Intro to Python course</li>
+                                <li>Worked with four other instructors to develop a lesson plan and teach Python basics to twenty-eight members of Cal Poly’s Fintech club</li>
+                            </ul>
+                        </div>
 
+                        <!--Confluent-->
+                        <div class="resume-item">
+                            <h4>Engineering Intern</h4>
+                            <h5>Jun 2019 - Aug 2019</h5>
+                            <p><em>Confluent Medical, Fremont CA</em></p>
+                            <ul>
+                                <li>Developed 3D printing best practices to reduce fixture cost up to 99% and lead time up to 97% </li>
+                                <li>Took initiative and performed operations study to establish surface fixture design standards</li>
+                                <li>Operated scanning electron microscope, salt-pot furnace, and Rockwell hardness tester to analyze thermomechanical properties of steel alloys to inform material selection for nitinol shape-set tooling</li>
+                            </ul>
+                        </div>
 
+                        <!--Formula-->
+                        <div class="resume-item">
+                            <h4>Steering Lead</h4>
+                            <h5>Sept 2017 - Jun 2019</h5>
+                            <p><em>Cal Poly Racing- FSAE, San Luis Obispo, CA</em></p>
+                            <ul>
+                                <li>Redesigned subsystem using SolidWorks and FEA to reduce total weight by 14%</li>
+                                <li>Decreased steering system service time by 70% </li>
+                                <li>Increased overall part reliability and yield by 26% by improving manufacturing methods</li>
+                                <li>Led a team of 5 and worked with corporate partners to successfully execute manufacturing and part sourcing</li>   
+                            </ul>
+                            <button class="btn_on btn_off" onclick="moreCPR()" id ="btn_moreCPR">more</button>
+                            <script>
+                                function moreCPR(){
+                                    var btn = document.getElementById("btn_moreCPR");
+                                    var more_CPR = document.getElementById("cprPics");
 
-
-
-
+                                    if (more_CPR.style.display == "none"){
+                                        more_CPR.style.display = "block";
+                                        btn.innerHTML = "less";
+                                    } else {
+                                        more_CPR.style.display = "none";
+                                        btn.innerHTML = "more"
+                                    }
+                                }
+                            </script>
+                            <div id="cprPics" style="display: none;">
+                                <div style="display: inline-block;text-align: center;">
+                                    <p>Some Slides from CDR</p>
+                                    <img src="assets/img/resume/cprSlide01.png" style="width: auto; height: 250px;"/>
+                                    <img src="assets/img/resume/cprSlide02.png" style="width: auto; height: 250px;"/>
+                                    <img src="assets/img/resume/cprSlide03.png" style="width: auto; height: 250px;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
 
 
 
