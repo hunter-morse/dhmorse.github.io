@@ -10207,7 +10207,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/china/westLake1.jpeg"); /*bg-masthead.jpg");*/
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10284,6 +10284,127 @@ body {
   }
 }
 
+/*------------------------------
+# Resume
+-------------------------------*/
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #64a19d;/*#0563bb;*/
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #64a19d;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #64a19d;
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  /*font-weight: bold;
+  text-transform: uppercase;*/
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+
+.section-title h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: #64a19d;  /*0563bb;*/
+  bottom: 0;
+  left: calc(50% - 60px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+/*------------------------------
+# Sign-up
+-------------------------------*/
+
+
 .signup-section {
   padding: 10rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-signup.jpg");
@@ -10302,6 +10423,8 @@ body {
   letter-spacing: 0.15rem;
   border: 0;
 }
+
+
 
 .contact-section {
   padding-top: 5rem;
@@ -10343,3 +10466,75 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+
+
+
+
+
+
+
+/*
+#contact{
+    padding:50px 15px;
+    background:#3498db;
+    text-align:center
+}
+#contact h2{
+    margin:0 0 15px 0;
+    color:#fff;
+    font-weight:500
+}
+#contact-form{
+    max-width:500px;
+    margin:0 auto
+}
+#contact-form input,#contact-form textarea{
+    display:block;
+    width:100%;
+    padding:10px;
+    border-radius:4px;
+    border:none;
+    margin-bottom:10px;
+    background:#1d6fa5;
+    color:#fff;
+    transition:.5s ease all
+}
+#contact-form input::-webkit-input-placeholder,#contact-form textarea::-webkit-input-placeholder{
+    color:#fff
+}
+#contact-form input:-moz-placeholder,#contact-form textarea:-moz-placeholder{
+    color:#fff;
+    opacity:1
+}
+#contact-form input::-moz-placeholder,#contact-form textarea::-moz-placeholder{
+    color:#fff;
+    opacity:1
+}
+#contact-form input:-ms-input-placeholder,#contact-form textarea:-ms-input-placeholder{
+    color:#fff
+}
+#contact-form input:focus,#contact-form textarea:focus{
+    outline:none;
+    background:#16527a
+}
+#contact-form textarea{
+    height:150px;
+    resize:none
+}
+#contact-form button{
+    display:block;
+    width:100%;
+    background:#fff;
+    border-radius:4px;
+    padding:5px 10px;
+    border:none;
+    color:#3498db;
+    font-weight:700;
+    box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+    transition:.5s ease all
+}
+#contact-form button:hover{
+    box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23)
+}
+*/
