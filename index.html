@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1JN3F80Z47"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-1JN3F80Z47');
+        </script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -27,9 +36,9 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resume">Resume</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -41,7 +50,7 @@
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
                     <h1 class="mx-auto my-0 text-uppercase">Hunter Morse</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Avid learner and tinkerer</h2>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">I like making hardware do things</h2>
                     <a class="btn btn-primary js-scroll-trigger" href="#about">Explore</a>
                 </div>
             </div>
@@ -55,26 +64,262 @@
                         <h2 class="text-white mb-4">About</h2>
                         <img class="img-fluid" src="assets/img/me.jpg" alt="" style="width:250px; height:auto" />
                         <p class="text-white-50">
-                            Hunter is a Embedded software engineer at Yaskawa. For the last two years he's been building motion control
-                            firmware and hardware drivers for Yaskawa's newest PLC platform: 
-                            <a href="https://www.yaskawa.com/products/motion/machine-controllers/icube-control"> iCube </a>. Before working at Yaskawa
-                            Hunter graduated as a <u>mechanical engineer</u> with a concentrating in <u>mechatronics</u> and 
-                            minor in <u>computer science</u> from Cal Poly, San Luis Obispo. During his final year, he worked part-time as 
-                            an <u>intern for HaptX</u>, where he is designing hardware and software tests to determine the limitations 
-                            of their virtual reality gloves to build novel algorithms to broaden the user's range of perception. 
-                            In addition, he continued development of his <u>senior project with Edwards Lifesciences</u>. As a member of an Edwards 
-                            Lifescience's MEDITEC project, he worked with an interdisciplinary team and industry 
-                            sponsors to build a precise, electro-pneumatic machine capable of automating a critical 
-                            step in Edwards' manufacturing process. That machine is now <u>patent pending</u>. Straddling the line between hardware, software, 
-                            and the human experience, Hunter aims to develop a career closing the divide between human and machine.
-                            
-                        </p>
-                        <p>
-                            <a href="#resume"> Resume </a>
+                            As a product of the LEGO → <a href="https://m.media-amazon.com/images/I/91Hgl5CqLdL._AC_UF894,1000_QL80_.jpg">Snap Circuit</a> 
+                            → Vex → Arduino → Embedded Software Engineer Pipeline, I like making dumb hardware smart and find joy in making things move. 
+                            For the last two years I’ve been working with a wonderful team in San Francisco to build Yaskawa’s next generation PLC— 
+                            <a href="https://www.icubecontrol.com/ic9200.html">iCube</a>. When I’m not at work I’m most likely fighting the urge to refactor 
+                            the codebase for my pet project, running, or playing pool. I like to spend my weekends trying new restaurants, picking up trash 
+                            (<a href="https://www.mobilize.us/togethersf/event/444979/">join us</a>!), and hosting field days in Golden Gate Park. 
                         </p>
                     </div>
                 </div>
                 
+            </div>
+        </section>
+
+        <!-- Resume -->
+        <section class="resume bg-light" id="resume">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Resume</h2>
+                    <p>Seeking a fast-paced, challenging role developing exciting mechatronics solutions</p>
+                </div>
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-xl-7 col-lg-8">
+                        <!--Yaskawa-->
+                        <div class="resume-item">
+                            <h4>Embedded Software Engineer (B): Yaskawa</h4>
+                            <h5>Sep 2024 - Present | San Francisco, CA</h5>
+                            <ul>
+                                <li>Spearheaded integration + testing of new motion tracking + GPIO (SLIO) hardware (C++, ST, SpecFlow, GTest)</li>
+                                <li>Created and maintained tests and testing infrastructure as part of a CI/CD pipeline (Docker, DevOps, Git)</li>
+                                <li>Developed diagnostics pages for the iCube HMI (HTML, JS, CSS)</li>
+                                <li>Constructed, debugged and maintained 120 and 240V hardware for remote and local teams (Ethernet, Oscilloscope)</li>
+                            </ul>
+                            <h4>Embedded Software Engineer (C): Yaskawa</h4>
+                            <h5>Jun 2022 - Sep 2024</h5>
+                        </div>
+                        
+                        <!--HaptX-->
+                        <div class="resume-item">
+                            <h4>Engineering Intern: HaptX</h4>
+                            <h5>Nov 2021 - Present | San Luis Obispo, CA</h5>
+                            <ul>
+                                <li>Developing software (<b>C++</b> and <b>Lua</b>) and hardware tests to determine limitations of HaptX DK2 system</li>
+                                <li>Evaluating methods for improving human perception using novel algorithms to simulate detailed surfaces</li>
+                            </ul>
+                        </div>
+                        
+                        <!--MEDITEC-->
+                        <div class="resume-item">
+                            <h4>Edwards Lifesciences: MEDITEC</h4>
+                            <h5>Sept 2020 - Jun 2021 | Remote</h5>
+                            <ul>
+                                <li>Collaborated with an interdisciplinary senior project team to develop a precise electro-pneumatic robot able to
+                                    automate a critical manufacturing process</li>
+                                <li>Designed using <b>Fusion 360</b>, manufactured with traditional and <b>3D Printing</b> techniques, and tested following <b>DVP&R method</b></li>  
+                                <li>Created system drivers, process algorithms, and HMI in <b>C</b> on <b>MSP432</b></li>  
+                                <li>Asked to continue work after successful senior project results</li>
+                            </ul>
+                        </div>
+                        
+                        <!--HMB-->
+                        <div class="resume-item">
+                            <h4>Research Assistant: Human Motion Biomechanics Lab</h4>
+                            <h5>Jan 2020 - Jun 2021 | San Luis Obispo, CA</h5>
+                            <ul>
+                                <li>Developing <b>MATLAB</b> script with Madgwick filter to calculate knee FE, IE, and AA angles from wearable sensors </li>
+                                <li>Processed and analyzed motion data using Motion Analysis’ Cortex and OpenSim</li>
+                                <li>Co-organized and performed the lab’s first gait study on youth participants</li>
+                            </ul>
+                            <button class="btn_on btn_off" onclick="moreHMB()" id ="btn_moreHMB">more</button>
+                            <script>
+                                function moreHMB(){
+                                    var btn = document.getElementById("btn_moreHMB");
+                                    var more_studyAbroad = document.getElementById("hmbPics");
+
+                                    if (more_studyAbroad.style.display == "none"){
+                                        more_studyAbroad.style.display = "block";
+                                        btn.innerHTML = "less";
+                                    } else {
+                                        more_studyAbroad.style.display = "none";
+                                        btn.innerHTML = "more"
+                                    }
+                                }
+                            </script>
+                            <div id="hmbPics" style="display: none;">
+                                <div style="display: inline-block;text-align: center;">
+                                    <p>Lab Members</p>
+                                    <img src="assets/img/resume/hmbGroup.JPG" style="width: auto; height: 300px;"/>
+                                </div>
+                                <div style="display: inline-block;text-align: center;">
+                                    <p>Marked-up</p>
+                                    <img src="assets/img/resume/hmbMarkers.JPG" style="width: auto; height: 300px;"/>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CPF Python-->
+                        <div class="resume-item">
+                            <h4>Python Course Instructor</h4>
+                            <h5>Winter 2021</h5>
+                            <p><em>Cal Poly Fintech, San Luis Obispo, CA</em></p>
+                            <ul>
+                                <li>Volunteer course instructor for an eight-week Intro to Python course</li>
+                                <li>Worked with four other instructors to develop a lesson plan and teach Python basics to twenty-eight members of Cal Poly’s Fintech club</li>
+                            </ul>
+                        </div>
+
+                        <!--Confluent-->
+                        <div class="resume-item">
+                            <h4>Engineering Intern: Confluent Medical</h4>
+                            <h5>Jun 2019 - Aug 2019 | Fremont, CA</h5>
+                            <ul>
+                                <li>Developed <b>3D printing</b> best practices to reduce fixture cost up to 99% and lead time up to 97% </li>
+                                <li>Took initiative and performed operations study to establish surface fixture design standards</li>
+                                <li>Designed and protoyped new surface fixtures in using <b>SolidWorks</b> and <b>FDM 3D printing</b> based on findings from design study</li>
+                                <li>Operated scanning electron microscope, salt-pot furnace, and Rockwell hardness tester to analyze 
+                                    thermomechanical properties of steel alloys to inform material selection for nitinol shape-set tooling</li>
+                            </ul>
+                        </div>
+
+                        <!--Formula-->
+                        <div class="resume-item">
+                            <h4>Steering Lead: Cal Poly Racing- FSAE</h4>
+                            <h5>Sept 2017 - Jun 2019 | San Luis Obispo, CA</h5>
+                            <ul>
+                                <li>Redesigned subsystem using <b>SolidWorks</b> and <b>FEA</b> to reduce total weight by 14%</li>
+                                <li>Decreased steering system service time by 70% </li>
+                                <li>Increased overall part reliability and yield by 26% by improving manufacturing methods</li>
+                                <li>Led a team of 5 and worked with corporate partners to successfully execute manufacturing and part sourcing</li>   
+                            </ul>
+                            <button class="btn_on btn_off" onclick="moreCPR()" id ="btn_moreCPR">more</button>
+                            <script>
+                                function moreCPR(){
+                                    var btn = document.getElementById("btn_moreCPR");
+                                    var more_CPR = document.getElementById("cprPics");
+
+                                    if (more_CPR.style.display == "none"){
+                                        more_CPR.style.display = "block";
+                                        btn.innerHTML = "less";
+                                    } else {
+                                        more_CPR.style.display = "none";
+                                        btn.innerHTML = "more"
+                                    }
+                                }
+                            </script>
+                            <div id="cprPics" style="display: none;">
+                                <div style="display: inline-block;text-align: center;">
+                                    <p>Some Slides from CDR</p>
+                                    <img src="assets/img/resume/cprSlide01.png" style="width: auto; height: 250px;"/>
+                                    <img src="assets/img/resume/cprSlide02.png" style="width: auto; height: 250px;"/>
+                                    <img src="assets/img/resume/cprSlide03.png" style="width: auto; height: 250px;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </section>
+
+
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Projects</h2>
+                </div>
+                <!-- Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects/surfStrip_proto.JPG" alt="" /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Surf Strip</h4>
+                            <p class="text-black-50 mb-0">To-scale wave height indicator meant to provide a tangible idea of how tall local waves are at a glance. The LEDs update  hourly based on data scraped from Surfline.com <em>Under development: webapp with Firebase backend to add spots and change LED colors</em></p>
+                            <p class="text-black-50 mb-0"> Built on an <b>Arduino MKR1010</b> in <b>C++</b>. Gained experience with <b>SPI</b> communication, web-scraping, Google's <b>Firebase</b>, <b>JavaScript</b>, <b>HTML</b>, and <b>CSS</b></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Four Row-->
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/projects/canOpener.png" alt="" /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Can Opener</h4>
+                                    <p class="mb-0 text-white-50">
+                                        Final project for my mechanical control system design class. Designed a custom PCB using <b>>Eagle</b> 
+                                        and wrote the software in <b>C++</b> using <b>FreeRTOS</b>. The machine reliably locates the tab on any size pull-tab can
+                                        and orients the can to a set position for opening. Limit switches and a reflective sensor ensure user safety while a 
+                                        temperature sensor informs the user how chilled their beverage is before consumption. 
+                                    </p>
+                                    <p class="mb-0 text-white-50"> Built in <b>C++</b>. Gained experience with <b>Eagle</b>, <b>Fusion360</b>, <b>C++</b>, <b>FreeRTOS</b>, <b>I2C</b>, and <b>SPI</b>.
+                                    </p>
+                                    <a href="https://hunter-morse.github.io/canOpener/"> Source </a>
+                                    <hr class="d-none d-lg-block mb-0 mr-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Three Row-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/projects/tiltTable_irl.JPG" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Balance Table</h4>
+                                    <p class="mb-0 text-white-50">Built as the term project for my mechatronics class at Cal Poly. The table uses a resistive touch panel to detect the motion of an object placed on its surface. Using DC motors and encoders the table moves such that the object is centered and the table is leveled.
+                                    </p>
+                                    <p class="mg-0 text-white-50">Built on a Nucleo L476RG (<b>STM32</b>) flashed with <b>MicroPython</b>
+                                    </p>
+                                    <a href="https://dhmorse.bitbucket.io/pg_lab09.html"> Source </a>
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/projects/derpBot.jpg" alt="" /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">DerpBot</h4>
+                                    <p class="mb-0 text-white-50">A Reddit bot that responds to comments in dErpTeXt. Instead of performing the same task for all input, the bot accepts user arguments and modifies its behavior accordingly
+                                    </p>
+                                    <p class="mb-0 text-white-50"> Built in <b>Python</b>. Gained experience implementing a <b>3rd party API</b> (Reddit's API)
+                                    </p>
+                                    <a href="https://github.com/hunter-morse/derpbot"> Source </a>
+                                    <hr class="d-none d-lg-block mb-0 mr-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/projects/polyPinsFull.png" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Poly Pins</h4>
+                                    <p class="mb-0 text-white-50">Placed 3rd in the SLO Hacks hackathon with an augmented reality (<b>AR</b>) <b>iOS app</b> to help students and visitors find places around the Cal Poly campus.   
+                                    </p>
+                                    <p class="mg-0 text-white-50"> Built in <b>XCode</b> with <b>Swift</b>. Implemented Apple's <b>ARKit</b> and Google's <b>Firebase</b> for live cloud storage.
+                                    </p>
+                                    <a href="https://devpost.com/software/slohacks2018-khsd1x"> Source </a>
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -211,241 +456,8 @@
             
         </section>
 
-        <!-- Resume -->
-        <section class="resume bg-light" id="resume">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                    <h2>Resume</h2>
-                    <p>Seeking full-time employment in the mechatronics industry beginning Summer or Fall 2022</p>
-                    <!-- <a href="https://github.com/hunter-morse/hunter-morse.github.io/raw/master/assets/pdf/HunterMorse_Resume.pdf"> Download PDF </a> -->
-                </div>
-                <div class="row justify-content-center no-gutters">
-                    <div class="col-xl-7 col-lg-8">
-                        <!--HaptX-->
-                        <div class="resume-item">
-                            <h4>Engineering Intern: HaptX</h4>
-                            <h5>Nov 2021 - Present</h5>
-                            <p><em>HaptX, San Luis Obispo, CA</em></p>
-                            <ul>
-                                <li>Developing software (<b>C++</b> and <b>Lua</b>) and hardware tests to determine limitations of HaptX DK2 system</li>
-                                <li>Evaluating methods for improving human perception using novel algorithms to simulate detailed surfaces</li>
-                            </ul>
-                        </div>
-                        
-                        <!--MEDITEC-->
-                        <div class="resume-item">
-                            <h4>Edwards Lifesciences: MEDITEC</h4>
-                            <h5>Sept 2020 - Present</h5>
-                            <p><em>Edwards Lifesciences, Irvine, CA</em></p>
-                            <ul>
-                                <li>Collaborated with an interdisciplinary senior project team to develop a precise electro-pneumatic robot able to
-                                    automate a critical manufacturing process</li>
-                                <li>Designed using <b>Fusion 360</b>, manufactured with traditional and <b>3D Printing</b> techniques, and tested following <b>DVP&R method</b></li>  
-                                <li>Created system drivers, process algorithms, and HMI in <b>C</b> on <b>MSP432</b></li>  
-                                <li>Asked to continue work after successful senior project results</li>
-                            </ul>
-                        </div>
-                        
-                        <!--HMB-->
-                        <div class="resume-item">
-                            <h4>Research Assistant</h4>
-                            <h5>Jan 2020 - Jun 2021</h5>
-                            <p><em>Human Motion Biomechanics Lab, Cal Poly, San Luis Obispo, CA</em></p>
-                            <ul>
-                                <li>Developing <b>MATLAB</b> script with Madgwick filter to calculate knee FE, IE, and AA angles from wearable sensors </li>
-                                <li>Processed and analyzed motion data using Motion Analysis’ Cortex and OpenSim</li>
-                                <li>Co-organized and performed the lab’s first gait study on youth participants</li>
-                            </ul>
-                            <button class="btn_on btn_off" onclick="moreHMB()" id ="btn_moreHMB">more</button>
-                            <script>
-                                function moreHMB(){
-                                    var btn = document.getElementById("btn_moreHMB");
-                                    var more_studyAbroad = document.getElementById("hmbPics");
 
-                                    if (more_studyAbroad.style.display == "none"){
-                                        more_studyAbroad.style.display = "block";
-                                        btn.innerHTML = "less";
-                                    } else {
-                                        more_studyAbroad.style.display = "none";
-                                        btn.innerHTML = "more"
-                                    }
-                                }
-                            </script>
-                            <div id="hmbPics" style="display: none;">
-                                <div style="display: inline-block;text-align: center;">
-                                    <p>Lab Members</p>
-                                    <img src="assets/img/resume/hmbGroup.JPG" style="width: auto; height: 300px;"/>
-                                </div>
-                                <div style="display: inline-block;text-align: center;">
-                                    <p>Marked-up</p>
-                                    <img src="assets/img/resume/hmbMarkers.JPG" style="width: auto; height: 300px;"/>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- CPF Python-->
-                        <div class="resume-item">
-                            <h4>Python Course Instructor</h4>
-                            <h5>Winter 2021</h5>
-                            <p><em>Cal Poly Fintech, San Luis Obispo, CA</em></p>
-                            <ul>
-                                <li>Volunteer course instructor for an eight-week Intro to Python course</li>
-                                <li>Worked with four other instructors to develop a lesson plan and teach Python basics to twenty-eight members of Cal Poly’s Fintech club</li>
-                            </ul>
-                        </div>
-
-                        <!--Confluent-->
-                        <div class="resume-item">
-                            <h4>Engineering Intern</h4>
-                            <h5>Jun 2019 - Aug 2019</h5>
-                            <p><em>Confluent Medical, Fremont, CA</em></p>
-                            <ul>
-                                <li>Developed <b>3D printing</b> best practices to reduce fixture cost up to 99% and lead time up to 97% </li>
-                                <li>Took initiative and performed operations study to establish surface fixture design standards</li>
-                                <li>Designed and protoyped new surface fixtures in using <b>SolidWorks</b> and <b>FDM 3D printing</b> based on findings from design study</li>
-                                <li>Operated scanning electron microscope, salt-pot furnace, and Rockwell hardness tester to analyze 
-                                    thermomechanical properties of steel alloys to inform material selection for nitinol shape-set tooling</li>
-                            </ul>
-                        </div>
-
-                        <!--Formula-->
-                        <div class="resume-item">
-                            <h4>Steering Lead</h4>
-                            <h5>Sept 2017 - Jun 2019</h5>
-                            <p><em>Cal Poly Racing- FSAE, San Luis Obispo, CA</em></p>
-                            <ul>
-                                <li>Redesigned subsystem using <b>SolidWorks</b> and <b>FEA</b> to reduce total weight by 14%</li>
-                                <li>Decreased steering system service time by 70% </li>
-                                <li>Increased overall part reliability and yield by 26% by improving manufacturing methods</li>
-                                <li>Led a team of 5 and worked with corporate partners to successfully execute manufacturing and part sourcing</li>   
-                            </ul>
-                            <button class="btn_on btn_off" onclick="moreCPR()" id ="btn_moreCPR">more</button>
-                            <script>
-                                function moreCPR(){
-                                    var btn = document.getElementById("btn_moreCPR");
-                                    var more_CPR = document.getElementById("cprPics");
-
-                                    if (more_CPR.style.display == "none"){
-                                        more_CPR.style.display = "block";
-                                        btn.innerHTML = "less";
-                                    } else {
-                                        more_CPR.style.display = "none";
-                                        btn.innerHTML = "more"
-                                    }
-                                }
-                            </script>
-                            <div id="cprPics" style="display: none;">
-                                <div style="display: inline-block;text-align: center;">
-                                    <p>Some Slides from CDR</p>
-                                    <img src="assets/img/resume/cprSlide01.png" style="width: auto; height: 250px;"/>
-                                    <img src="assets/img/resume/cprSlide02.png" style="width: auto; height: 250px;"/>
-                                    <img src="assets/img/resume/cprSlide03.png" style="width: auto; height: 250px;"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>          
-        </section>
-
-
-
-        <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
-            <div class="container">
-                <!-- Featured Project Row-->
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/projects/surfStrip_proto.JPG" alt="" /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Surf Strip</h4>
-                            <p class="text-black-50 mb-0">To-scale wave height indicator meant to provide a tangible idea of how tall local waves are at a glance. The LEDs update  hourly based on data scraped from Surfline.com <em>Under development: webapp with Firebase backend to add spots and change LED colors</em></p>
-                            <p class="text-black-50 mb-0"> Built on an <b>Arduino MKR1010</b> in <b>C++</b>. Gained experience with <b>SPI</b> communication, web-scraping, Google's <b>Firebase</b>, <b>JavaScript</b>, <b>HTML</b>, and <b>CSS</b></p>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Four Row-->
-                <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/projects/canOpener.png" alt="" /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Can Opener</h4>
-                                    <p class="mb-0 text-white-50">
-                                        Final project for my mechanical control system design class. Designed a custom PCB using <b>>Eagle</b> 
-                                        and wrote the software in <b>C++</b> using <b>FreeRTOS</b>. The machine reliably locates the tab on any size pull-tab can
-                                        and orients the can to a set position for opening. Limit switches and a reflective sensor ensure user safety while a 
-                                        temperature sensor informs the user how chilled their beverage is before consumption. 
-                                    </p>
-                                    <p class="mb-0 text-white-50"> Built in <b>C++</b>. Gained experience with <b>Eagle</b>, <b>Fusion360</b>, <b>C++</b>, <b>FreeRTOS</b>, <b>I2C</b>, and <b>SPI</b>.
-                                    </p>
-                                    <a href="https://hunter-morse.github.io/canOpener/"> Source </a>
-                                    <hr class="d-none d-lg-block mb-0 mr-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Three Row-->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/projects/tiltTable_irl.JPG" alt="" /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Balance Table</h4>
-                                    <p class="mb-0 text-white-50">Built as the term project for my mechatronics class at Cal Poly. The table uses a resistive touch panel to detect the motion of an object placed on its surface. Using DC motors and encoders the table moves such that the object is centered and the table is leveled.
-                                    </p>
-                                    <p class="mg-0 text-white-50">Built on a Nucleo L476RG (<b>STM32</b>) flashed with <b>MicroPython</b>
-                                    </p>
-                                    <a href="https://dhmorse.bitbucket.io/pg_lab09.html"> Source </a>
-                                    <hr class="d-none d-lg-block mb-0 ml-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Two Row-->
-                <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/projects/derpBot.jpg" alt="" /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">DerpBot</h4>
-                                    <p class="mb-0 text-white-50">A Reddit bot that responds to comments in dErpTeXt. Instead of performing the same task for all input, the bot accepts user arguments and modifies its behavior accordingly
-                                    </p>
-                                    <p class="mb-0 text-white-50"> Built in <b>Python</b>. Gained experience implementing a <b>3rd party API</b> (Reddit's API)
-                                    </p>
-                                    <a href="https://github.com/hunter-morse/derpbot"> Source </a>
-                                    <hr class="d-none d-lg-block mb-0 mr-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project One Row-->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/projects/polyPinsFull.png" alt="" /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Poly Pins</h4>
-                                    <p class="mb-0 text-white-50">Placed 3rd in the SLO Hacks hackathon with an augmented reality (<b>AR</b>) <b>iOS app</b> to help students and visitors find places around the Cal Poly campus.   
-                                    </p>
-                                    <p class="mg-0 text-white-50"> Built in <b>XCode</b> with <b>Swift</b>. Implemented Apple's <b>ARKit</b> and Google's <b>Firebase</b> for live cloud storage.
-                                    </p>
-                                    <a href="https://devpost.com/software/slohacks2018-khsd1x"> Source </a>
-                                    <hr class="d-none d-lg-block mb-0 ml-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
 
         <!-- Signup--
@@ -522,21 +534,6 @@
                         <-- End #contact ->
                     </div-->
                 
-    
-        
-
-                <!--
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-                            </div>
-                        </div>
-                    </div>
-                -->
                 
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
